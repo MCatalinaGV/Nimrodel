@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#cabecera{
+    background-image: url("../IMG/fondo.jpg");
+    background-size: 500px;
+    
+    
+}
+.navbar-brand img{
+    width: 8%;
+}
+
+
+
+#titulo{
+    text-align: center;
+    color: #7D7B80;
+    font-size: 4rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h2{
+    text-align: center;
+    text-decoration:  overline;
+    margin-bottom: 4%;
+}
+.row img{
+    height: 300px; 
+   }
+   .card-body{
+       text-align: center;
+   }
+
+
+#formulario{
+    background-color:#070707;
+    width: 40%;
+    border-radius: 6px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4%;
+    opacity: 0.8;
+   color: white;
+}
+form{
+    width: 100%;
+    margin: auto;
+}
+
+#reserva{
+    
+    background-color:#070707;
+    width: 40%;
+    border-radius: 6px;
+    opacity: 0.8;
+   color: white;
+    text-align: center;
+    margin: auto;
+}
+footer{
+    background-image: url("../IMG/fondo.jpg");
+    padding:6%;
+    text-align: center;
+    height: 100px;
+}
+
+footer p{
+    color: white;
+    
+}
+@media(max-width:800px){
+    #formulario{
+        display: none;
+    }
+    #reserva{
+        display: none;
+    }
+    #destacado{
+        width: 100%;
+        font-size: x-large;
+        
+    }
+   
+}
+textarea{
+    width: 80%;
+}
+@media(min-width:800px)and (max-width:1300px){
+  
+    #reserva, #formulario{
+       width: 60%;
+    }
+}
+#carouselExampleFade img{
+    height: 650px;
+}
+#destacado{
+    width: 60%;
+    text-align: center;
+    display: none;
+    background-color: black;
+    position: fixed;
+    top: 15%;
+    bottom: 15%;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    color: white;    
+
+   
+}
+#destacado img{
+    width: 60%;
+    height: 300px;
+}
+.btn-close{
+    margin-left: 0;
+    margin-right: 100%;
+}
