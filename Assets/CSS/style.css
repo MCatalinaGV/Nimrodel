@@ -120,3 +120,38 @@ textarea{
     margin-left: 0;
     margin-right: 100%;
 }
+#historia{
+    position: fixed;
+    top: 15%;
+    bottom: 15%;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    width: 60%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 2%;
+    display: none;
+    
+  
+ 
+}
+
+.nimrodel-nosotros{
+    font-style: italic;
+    width: 70%;
+}
+.elfa-img{
+    width: 30%;
+       
+}
+.elfa-img img{
+    width: 60%;
+    
+}
+.nimrodel-historia{
+    width: 60%;
+    font-style: italic;
+
+}

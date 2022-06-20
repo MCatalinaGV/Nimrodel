@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="Assets/CSS/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-     <!-- JQuery-->
+  <!-- JQuery-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
   <title>NIMRODEL Restaurant y Pub</title>
@@ -39,7 +39,7 @@
               <a class="nav-link active" aria-current="page" href="#">Nuestros productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre nosotros</a>
+              <a class="nav-link" id="nosotros" href="#historia">Sobre nosotros</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" onclick="formulario()" href="#formulario">Comuniquemonos</a>
@@ -58,14 +58,93 @@
     <h1>Nimrodel Pub Restaurant</h1>
   </section>
 
-  <div id="destacado" class="container" >
+
+  <!--SOBRE NOSOTROS-->
+  <article id="historia" class="container">
+    
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  
+      <div class="carousel-inner">
+        
+        <h3 class="pb-3">Nimrodel Pub Restaurant </h3>
+      
+        <div class="carousel-item active">
+          <center>
+            <div class="elfa-img">
+              <img src="assets/IMG/Nimrodel-Vladislav-Zharkov.jpg" class="d-block w-100"
+                alt="Elfa Nimrodel">
+              
+              </div>
+           
+            </center>
+            
+        </div>
+        <div class="carousel-item">
+          <center>
+            <div class="nimrodel-historia" class="d-block w-100">
+              <h5>Nimrodel
+                Significa “dama de la cueva blanca”. Fue una elfa silvana que vivió durante la Tercera
+                Edad del Sol en el bosque de Lothlórien. En honor a su nombre, se acuña Nimrodel al río
+                que nace en las Montañas Nubladas</h5>
+            </div>
+            <div class="elfa-img">
+              <img src="assets/IMG/descarga.jpg" class="d-block w-100" alt="Nimrodel">
+             
+            </div>
+          
+          </center>
+        </div>
+        <div class="carousel-item">
+          <center>
+            <div class="nimrodel-nosotros" class="d-block w-100">
+              <h5>Nimrodel Pub Restorant es un oasis de calma y diversión,
+                lleno de rincones acogedores en donde se resalta la belleza de su decoración elfica. <br>
+                Es un lugar ideal para visitar solo o acompañado, disfrutar una tarde con amigos, terminar el día después
+                del trabajo
+                o almorzar con tu familia. <br>
+                Puedes probar nuestras tradicionales tablas, en todas sus variedades y que nos han otorgado reconocimiento
+                dentro de la cultura
+                gastronomica. <br>
+                También puedes disfrutar nuestras cervezas de fabricación propia, con sabores que te llevarán a un magico
+                mundo.
+              </h4>
+              
+              </div>
+              
+          </center>
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+     
+    </div>
+
+    <div>
+      <button type="button" id="cierre-historia" class="btn-close btn-close-white" aria-label="Close"></button>
+    </div>
+    
+
+
+  </article>
+
+
+
+  <div id="destacado" class="container">
     <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
     <h1 id="tittle">aaa</h1>
     <p id="description">aaa</p>
     <img id="image" src="" alt="">
-  
+
   </div>
-  
+
 
   <!--CUERPO DEL DOCUMENTO CON LAS TARJETAS-->
   <main class="pt-5 pb-3">
@@ -78,7 +157,8 @@
             <img src="Assets/IMG/bebidas.jpg" class="card-img-top" id="img1" alt="GASEOSAS">
             <div class="card-body">
               <h5 class="card-title" id="titulo1">GASEOSAS</h5>
-              <p class="card-text" id="descripcion1">This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="card-text" id="descripcion1">This is a wider card with supporting text below as a natural
+                lead-in to additional
                 content. This content is a little bit longer.</p>
             </div>
           </div>
@@ -89,18 +169,20 @@
           <div class="card h-100">
             <img src="Assets/IMG/tablas.jpg" id="img2" class="card-img-top" alt="TABLAS">
             <div class="card-body">
-              <h5 class="card-title" id="titulo2" >TABLAS</h5>
-              <p class="card-text" id="descripcion2" >This card has supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title" id="titulo2">TABLAS</h5>
+              <p class="card-text" id="descripcion2">This card has supporting text below as a natural lead-in to
+                additional content.</p>
             </div>
           </div>
         </div>
 
         <div class="col" id="tarjeta3">
           <div class="card h-100">
-            <img src="Assets/IMG/shop.jpeg"  id="img3" class="card-img-top" alt="CERVEZAS">
+            <img src="Assets/IMG/shop.jpeg" id="img3" class="card-img-top" alt="CERVEZAS">
             <div class="card-body">
               <h5 class="card-title" id="titulo3">SHOP CERVEZA</h5>
-              <p class="card-text" id="descripcion3" >This is a wider card with supporting text below as a natural lead-in to additional
+              <p class="card-text" id="descripcion3">This is a wider card with supporting text below as a natural
+                lead-in to additional
                 content. This card has even longer content than the first to show that equal height action.</p>
             </div>
           </div>
@@ -114,18 +196,18 @@
   <div id="formulario" class="mt-5 pb-3 pt-3">
 
     <h3>Comuniquemonos</h3>
-    <form class="container" >
+    <form class="container">
 
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" required pattern="[a-zA-Z ]{2,254}"
-          placeholder="María Vargas">
+        <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp" required
+          pattern="[a-zA-Z ]{2,254}" placeholder="María Vargas">
       </div>
 
       <div class="mb-3">
         <label for="correo" class="form-label">Correo</label>
         <input type="email" class="form-control" required id="correo" aria-describedby="emailHelp"
-          pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$"  placeholder="mariavargas@correo.com">
+          pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" placeholder="mariavargas@correo.com">
       </div>
 
       <div class="mb-3">
@@ -135,8 +217,8 @@
 
       <div class="mb-3">
         <label for="motivo" class="form-label">Motivo</label>
-        <input type="text" class="form-control" id="motivo" name="motivo" required list="motivoList" >
-        <datalist id="motivoList" >
+        <input type="text" class="form-control" id="motivo" name="motivo" required list="motivoList">
+        <datalist id="motivoList">
           <option value="felicitaciones">Felicitaciones</option>
           <option value="reclamo">Reclamo</option>
           <option value="consultas">Consultas</option>
@@ -145,7 +227,7 @@
       </div>
 
       <div class="mb-3">
-        <textarea name="" required id="texto" cols="30" rows="10" >
+        <textarea name="" required id="texto" cols="30" rows="10">
         </textarea>
       </div>
 
@@ -161,8 +243,8 @@
     <form class="container">
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombreR" aria-describedby="emailHelp" 
-          required placeholder="María Vargas">
+        <input type="text" class="form-control" id="nombreR" aria-describedby="emailHelp" required
+          placeholder="María Vargas">
       </div>
 
       <div class="mb-3">

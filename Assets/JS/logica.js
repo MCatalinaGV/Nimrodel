@@ -101,4 +101,17 @@ $(document).ready(function () {
 
 
     })
+
+
+    $("#nosotros").click(function(){
+        $("#historia").show();
+    })
+
+   $("#cierre-historia").click(function(){
+       $("#historia").hide();
+   })
+
+
+
+
 });
